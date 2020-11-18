@@ -1,5 +1,6 @@
 import 'package:TM/src/page/home/tabs/PrincipalsMenuTab.dart';
 import 'package:TM/src/page/home/tabs/TMQuestionsTab.dart';
+import 'package:TM/src/page/home/tabs/VideosTab.dart';
 import 'package:flutter/material.dart';
 
 class AppHomePageMainContainer extends StatefulWidget {
@@ -32,7 +33,7 @@ class _AppHomePageMainContainerState extends State<AppHomePageMainContainer> {
         body: TabBarView(children: <Widget>[
           PrincipalsMenuTab(),
           TMQuestionsTab(),
-          TMQuestionsTab(),
+          VideosTab(),
           TMQuestionsTab(),
         ]),
       ),

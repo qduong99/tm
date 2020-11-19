@@ -1,7 +1,6 @@
 import 'package:TM/src/screens/LoginScreen.dart';
 import 'package:TM/src/theme.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 void main() {
   runApp(App());
@@ -16,11 +15,10 @@ class _AppState extends State<App> {
 
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(
-        child: MaterialApp(
+    return MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: appTheme,
           home: LoginScreen(),
-        ));
+        );
   }
 }

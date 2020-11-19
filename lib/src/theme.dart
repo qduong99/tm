@@ -4,7 +4,7 @@
 
 import 'package:flutter/material.dart';
 
-const appPrimaryColor = Colors.lightBlueAccent;
+const appPrimaryColor = Colors.green;//Colors.lightBlueAccent;
 const appAccentColor = Color(0xFFFFB900);
 
 final appBarTheme = AppBarTheme(

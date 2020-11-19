@@ -1,6 +1,6 @@
 import 'package:TM/src/notifier/AppState.dart';
 import 'package:TM/src/page/FundamentalPage.dart';
-import 'package:TM/src/screens/MainScreen.dart';
+import 'package:TM/src/screens/LoginScreen.dart';
 import 'package:TM/src/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -14,7 +14,6 @@ class App extends StatefulWidget {
   _AppState createState() => _AppState();
 }
 
-//https://firebase.flutter.dev/docs/overview/
 class _AppState extends State<App> {
 
   @override
@@ -29,7 +28,7 @@ class _AppState extends State<App> {
           },
           debugShowCheckedModeBanner: false,
           theme: appTheme,
-          home: MainScreen(),
+          home: LoginScreen(),
         ));
   }
 }

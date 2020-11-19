@@ -1,3 +1,4 @@
+import 'package:TM/src/page/home/VideosHomePage.dart';
 import 'package:flutter/material.dart';
 
 import '../bar/AppBottomButtonNavBar.dart';
@@ -22,7 +23,7 @@ class _MainScreenState extends State<MainScreen> {
             physics: NeverScrollableScrollPhysics(),
             children: [
               AppHomePage(),
-              AppHomePage(),
+              VideosHomePage(),
               AppHomePage(),
               AppHomePage(),
             ],

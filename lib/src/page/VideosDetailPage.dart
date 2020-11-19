@@ -76,10 +76,24 @@ class _CustomMainPageState extends State<CustomMainPage> {
     images[2] = ["principals/2/1.png", "principals/2/2.png", "principals/2/3.png", "principals/2/4.png"];
     images[3] = ["principals/3/1.png", "principals/3/2.png", "principals/3/3.png"];
     images[4] = ["principals/4/1.png"];
+    images[5] = ["principals/1/1.png", "principals/1/2.png", "principals/1/3.png"];
+    images[6] = ["principals/2/1.png", "principals/2/2.png", "principals/2/3.png", "principals/2/4.png"];
+    images[7] = ["principals/3/1.png", "principals/3/2.png", "principals/3/3.png"];
+    images[8] = ["principals/4/1.png"];
+    images[9] = ["principals/1/1.png", "principals/1/2.png", "principals/1/3.png"];
+    images[10] = ["principals/2/1.png", "principals/2/2.png", "principals/2/3.png", "principals/2/4.png"];
+    images[11] = ["principals/3/1.png", "principals/3/2.png", "principals/3/3.png"];
     videos[1] = ["https://www.youtube.com/watch?v=RJ44oIxWiYI"];
     videos[2] = ["https://www.youtube.com/watch?v=V3WkgVpv1Zk"];
     videos[3] = ["https://www.youtube.com/watch?v=Yq5C1Qt4jPE"];
     videos[4] = ["https://www.youtube.com/watch?v=z6A-2U6wGw8"];
+    videos[5] = ["https://www.youtube.com/watch?v=zTeLretIlTE"];
+    videos[6] = ["https://www.youtube.com/watch?v=v4Ao9M_wjfc"];
+    videos[7] = ["https://www.youtube.com/watch?v=Tx2fyhhMJyo"];
+    videos[8] = ["https://www.youtube.com/watch?v=MeCHfgq2Vp8&list=RDCMUCvMnoQUEVCAf8MHDTnfBqMg&index=4"];
+    videos[9] = ["https://www.youtube.com/watch?v=z6A-2U6wGw8"];
+    videos[10] = ["https://www.youtube.com/watch?v=z6A-2U6wGw8"];
+    videos[11] = ["https://www.youtube.com/watch?v=z6A-2U6wGw8"];
   }
 
 

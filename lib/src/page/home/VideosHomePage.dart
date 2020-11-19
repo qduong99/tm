@@ -2,6 +2,10 @@ import 'package:TM/src/page/home/AppHomePageMainContainer.dart';
 import 'package:TM/src/page/home/tabs/PrincipalsMenuTab.dart';
 import 'package:TM/src/page/home/tabs/TMQuestionsTab.dart';
 import 'package:TM/src/page/home/tabs/VideosTab.dart';
+import 'package:TM/src/page/home/videoTabs/Section1.dart';
+import 'package:TM/src/page/home/videoTabs/Section2.dart';
+import 'package:TM/src/page/home/videoTabs/Section3.dart';
+import 'package:TM/src/page/home/videoTabs/Section4.dart';
 import 'package:flutter/material.dart';
 
 class VideosHomePage extends StatefulWidget {
@@ -14,10 +18,10 @@ class VideosHomePage extends StatefulWidget {
 
 class _VideosHomePageState extends State<VideosHomePage> {
   final tabs = [
-    "TM1 Videos",
-    "TM2 Videos",
-    "TM3 Videos",
-    "TM4 Videos",
+    "Asanas",
+    "Sun Salutation",
+    "Lectures",
+    "Other Videos",
   ];
 
   @override
@@ -37,10 +41,10 @@ class _VideosHomePageState extends State<VideosHomePage> {
               ),
             ),
             body: TabBarView(children: <Widget>[
-              VideosTab(),
-              VideosTab(),
-              VideosTab(),
-              VideosTab(),
+              Section1(),
+              Section2(),
+              Section3(),
+              Section4(),
             ]),
           ),
         )

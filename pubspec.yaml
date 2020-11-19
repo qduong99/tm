@@ -54,11 +54,27 @@ flutter:
   assets:
     - assets/
     - assets/images/
-    - assets/images/principals/
     - assets/images/tm/
     - assets/images/fundamentals/
     - assets/images/videos/
     - assets/images/logo/
+    - assets/images/principals/
+    - assets/images/principals/1/
+    - assets/images/principals/2/
+    - assets/images/principals/3/
+    - assets/images/principals/4/
+    - assets/images/principals/5/
+    - assets/images/principals/6/
+    - assets/images/principals/7/
+    - assets/images/principals/8/
+    - assets/images/principals/9/
+    - assets/images/principals/10/
+    - assets/images/principals/11/
+    - assets/images/principals/12/
+    - assets/images/principals/13/
+    - assets/images/principals/14/
+    - assets/images/principals/15/
+    - assets/images/principals/16/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

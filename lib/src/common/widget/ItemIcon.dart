@@ -35,7 +35,10 @@ class _ItemIconState extends State<ItemIcon> {
                       color: Colors.red,
                       size: 24.0,
                     )),
-                widget.text,
+                Padding(
+                  padding: const EdgeInsets.only(left: 8.0),
+                  child: widget.text,
+                ),
               ],
             )));
   }

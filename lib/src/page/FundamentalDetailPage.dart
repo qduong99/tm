@@ -62,11 +62,11 @@ class _CustomMainPageState extends State<CustomMainPage> {
   @override
   initState() {
     super.initState();
-    images[1] = ["fundamentals/1/1.png", "fundamentals/1/2.png", "fundamentals/1/3.png"];
-    images[2] = ["fundamentals/2/1.png", "fundamentals/2/2.png", "fundamentals/2/3.png", "fundamentals/2/4.png"];
-    images[3] = ["fundamentals/3/1.png", "fundamentals/3/2.png", "fundamentals/3/3.png"];
+    images[1] = ["fundamentals/1/1.png"];
+    images[2] = ["fundamentals/2/1.png"];
+    images[3] = ["fundamentals/3/1.png"];
     images[4] = ["fundamentals/4/1.png"];
-    images[5] = ["fundamentals/5/1.png", "fundamentals/5/2.png"];
+    images[5] = ["fundamentals/5/1.png"];
   }
 
   _build() {

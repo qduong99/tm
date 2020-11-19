@@ -16,7 +16,7 @@ class _AppHomePageMainContainerState extends State<AppHomePageMainContainer> {
     final tabs = [
       "Principals",
       "Fundamentals",
-      "TM Question",
+      "TM Questions",
       "Videos",
     ];
     return DefaultTabController(

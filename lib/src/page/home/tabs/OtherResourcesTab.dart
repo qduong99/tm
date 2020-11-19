@@ -1,5 +1,5 @@
 import 'package:TM/src/common/widget/ItemIcon.dart';
-import 'package:TM/src/page/home/DetailPage.dart';
+import 'package:TM/src/page/home/tabs/VideosTab.dart';
 import 'package:flutter/material.dart';
 
 class OtherResourcesTab extends StatefulWidget {
@@ -45,7 +45,7 @@ class _OtherResourcesTabState extends State<OtherResourcesTab> {
     Navigator.of(context).push(
       MaterialPageRoute<void>(
         builder: (BuildContext context) {
-          return DetailPage();
+          return VideosTab();
         },
       ),
     );

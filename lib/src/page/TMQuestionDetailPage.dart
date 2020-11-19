@@ -4,33 +4,33 @@ import 'package:TM/src/common/widget/TMImage.dart';
 import 'package:TM/src/theme.dart';
 import 'package:flutter/material.dart';
 
-class FundamentalDetailPage extends StatefulWidget {
-  final int fundamentalId;
+class TMQuestionDetailPage extends StatefulWidget {
+  final int id;
 
-  FundamentalDetailPage(this.fundamentalId);
+  TMQuestionDetailPage(this.id);
 
   @override
-  _FundamentalDetailPageState createState() => _FundamentalDetailPageState();
+  _TMQuestionDetailPageState createState() => _TMQuestionDetailPageState();
 }
 
-class _FundamentalDetailPageState extends State<FundamentalDetailPage> {
+class _TMQuestionDetailPageState extends State<TMQuestionDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Row(children: <Widget>[
-          Text("Fundamental Detail ${widget.fundamentalId}"),
+          Text("TM Common Questions"),
         ]),
       ),
-      body: CustomMainPage(widget.fundamentalId),
+      body: CustomMainPage(widget.id),
     );
   }
 }
 
 class CustomMainPage extends StatefulWidget {
-  final int fundamentalId;
+  final int id;
 
-  CustomMainPage(this.fundamentalId);
+  CustomMainPage(this.id);
 
   @override
   _CustomMainPageState createState() => _CustomMainPageState();
@@ -62,16 +62,21 @@ class _CustomMainPageState extends State<CustomMainPage> {
   @override
   initState() {
     super.initState();
-    images[1] = ["fundamentals/1/1.png","fundamentals/1/2.png","fundamentals/1/3.png","fundamentals/1/4.png","fundamentals/1/5.png","fundamentals/1/6.png"];
-    images[2] = ["fundamentals/2/1.png"];
-    images[3] = ["fundamentals/3/1.png"];
-    images[4] = ["fundamentals/4/1.png"];
-    images[5] = ["fundamentals/5/1.png"];
+    images[1] = ["tm/1.png"];
+    images[2] = ["tm/2.png","tm/2-1.png"];
+    images[3] = ["tm/3.png"];
+    images[4] = ["tm/4.png"];
+    images[5] = ["tm/5.png"];
+    images[6] = ["tm/6.png","tm/6-1.png"];
+    images[7] = ["tm/7.png"];
+    images[8] = ["tm/8.png"];
+    images[9] = ["tm/9.png"];
+    images[10] = ["tm/10.png"];
   }
 
   _build() {
     List<Widget> result = [];
-    List<String> principalImages = images[widget.fundamentalId];
+    List<String> principalImages = images[widget.id];
     for (String imagePath in principalImages) {
       result.add(new TMImage(image: imagePath));
       result.add(SizedBox(height: 8));

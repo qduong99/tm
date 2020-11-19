@@ -1,3 +1,4 @@
+import 'package:TM/src/page/home/tabs/FundamentalsTab.dart';
 import 'package:TM/src/page/home/tabs/PrincipalsMenuTab.dart';
 import 'package:TM/src/page/home/tabs/TMQuestionsTab.dart';
 import 'package:TM/src/page/home/tabs/VideosTab.dart';
@@ -14,9 +15,9 @@ class _AppHomePageMainContainerState extends State<AppHomePageMainContainer> {
   Widget build(BuildContext context) {
     final tabs = [
       "Principals",
+      "Fundamentals",
       "TM Question",
       "Videos",
-      "Other Resources",
     ];
     return DefaultTabController(
       length: tabs.length,
@@ -32,9 +33,10 @@ class _AppHomePageMainContainerState extends State<AppHomePageMainContainer> {
         ),
         body: TabBarView(children: <Widget>[
           PrincipalsMenuTab(),
+          FundamentalsTab(),
           TMQuestionsTab(),
           VideosTab(),
-          TMQuestionsTab(),
+
         ]),
       ),
     );

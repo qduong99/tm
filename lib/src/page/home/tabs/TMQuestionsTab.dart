@@ -1,4 +1,3 @@
-import 'package:TM/src/page/FundamentalPage.dart';
 import 'package:TM/src/page/PrincipalDetailPage.dart';
 import 'package:flutter/material.dart';
 
@@ -47,12 +46,5 @@ class _TMQuestionsTabState extends State<TMQuestionsTab> {
       ),
     );
   }
-
-  void _onGIUnplanned() async {
-    Navigator.of(context).pushNamed(
-        FundamentalPage.routeName
-    );
-  }
-
 
 }

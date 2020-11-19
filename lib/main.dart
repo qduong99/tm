@@ -1,5 +1,4 @@
 import 'package:TM/src/notifier/AppState.dart';
-import 'package:TM/src/page/FundamentalPage.dart';
 import 'package:TM/src/screens/LoginScreen.dart';
 import 'package:TM/src/theme.dart';
 import 'package:flutter/material.dart';
@@ -23,9 +22,6 @@ class _AppState extends State<App> {
           ChangeNotifierProvider(create: (_) => AppState()),
         ],
         child: MaterialApp(
-          routes: {
-            FundamentalPage.routeName: (context) => FundamentalPage(),
-          },
           debugShowCheckedModeBanner: false,
           theme: appTheme,
           home: LoginScreen(),

@@ -1,4 +1,3 @@
-import 'package:TM/src/page/FundamentalPage.dart';
 import 'package:TM/src/page/PrincipalDetailPage.dart';
 import 'package:flutter/material.dart';
 import '../../../common/widget/ItemIcon.dart';
@@ -59,15 +58,4 @@ class _PrincipalsMenuTabState extends State<PrincipalsMenuTab> {
     );
   }
 
-  void _onFundamental() async {
-    Navigator.of(context).pushNamed(
-      FundamentalPage.routeName
-    );
-  }
-
-  void _onTM() async {
-    Navigator.of(context).pushNamed(
-        FundamentalPage.routeName,
-    );
-  }
 }

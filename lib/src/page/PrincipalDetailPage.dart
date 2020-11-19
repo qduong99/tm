@@ -72,7 +72,7 @@ class _CustomMainPageState extends State<CustomMainPage> {
     images[8] = ["principals/8/1.png", "principals/8/2.png"];
     images[9] = ["principals/9/1.png", "principals/9/2.png", "principals/9/3.png"];
     images[10] = ["principals/10/1.png", "principals/10/2.png"];
-    images[11] = ["principals/11/1.png", "principals/12.png"];
+    images[11] = ["principals/11/1.png", "principals/11/2.png"];
     images[12] = ["principals/12/1.png", "principals/12/2.png", "principals/12/3.png"];
     images[13] = ["principals/13/1.png", "principals/13/2.png", "principals/13/3.png", "principals/13/4.png"];
     images[14] = ["principals/14/1.png", "principals/14/2.png"];

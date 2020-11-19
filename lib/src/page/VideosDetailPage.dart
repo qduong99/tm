@@ -22,7 +22,7 @@ class _VideosDetailPageState extends State<VideosDetailPage> {
     return Scaffold(
       appBar: AppBar(
         title: Row(children: <Widget>[
-          Text("Principal Detail"),
+          Text("Video"),
         ]),
       ),
       body: CustomMainPage(),

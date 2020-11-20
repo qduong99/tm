@@ -91,6 +91,13 @@ class LoginScreen extends StatelessWidget {
                           },
                           color: Colors.green,
                         ),
+                      ),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      Text(
+                        'Image Sources and Videos from  "TM Enjoy News" website - https://enjoytmnews.org/',
+                        style: TextStyle(color: Colors.green, fontSize: 14, fontWeight: FontWeight.w500),
                       )
                     ],
                   ),

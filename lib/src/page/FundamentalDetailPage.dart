@@ -90,8 +90,6 @@ class _CustomMainPageState extends State<CustomMainPage> {
       result.add(SizedBox(height: 8));
     }
 
-    print(result);
-
     return ListView(
       shrinkWrap: true,
       physics: NeverScrollableScrollPhysics(),

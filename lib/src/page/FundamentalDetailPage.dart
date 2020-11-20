@@ -5,7 +5,7 @@ import 'package:TM/src/theme.dart';
 import 'package:flutter/material.dart';
 
 class FundamentalDetailPage extends StatefulWidget {
-  final int fundamentalId;
+  final String fundamentalId;
 
   FundamentalDetailPage(this.fundamentalId);
 
@@ -19,7 +19,7 @@ class _FundamentalDetailPageState extends State<FundamentalDetailPage> {
     return Scaffold(
       appBar: AppBar(
         title: Row(children: <Widget>[
-          Text("Fundamental Detail ${widget.fundamentalId}"),
+          Text("Fundamental: ${widget.fundamentalId}"),
         ]),
       ),
       body: CustomMainPage(widget.fundamentalId),
@@ -28,7 +28,7 @@ class _FundamentalDetailPageState extends State<FundamentalDetailPage> {
 }
 
 class CustomMainPage extends StatefulWidget {
-  final int fundamentalId;
+  final String fundamentalId;
 
   CustomMainPage(this.fundamentalId);
 
@@ -37,7 +37,7 @@ class CustomMainPage extends StatefulWidget {
 }
 
 class _CustomMainPageState extends State<CustomMainPage> {
-  Map<int, List<String>> images = new HashMap();
+  Map<String, List<String>> images = new HashMap();
 
   final _formKey = GlobalKey<FormState>();
 
@@ -62,20 +62,36 @@ class _CustomMainPageState extends State<CustomMainPage> {
   @override
   initState() {
     super.initState();
-    images[1] = ["fundamentals/1/1.png","fundamentals/1/2.png","fundamentals/1/3.png","fundamentals/1/4.png","fundamentals/1/5.png","fundamentals/1/6.png"];
-    images[2] = ["fundamentals/2/1.png"];
-    images[3] = ["fundamentals/3/1.png"];
-    images[4] = ["fundamentals/4/1.png"];
-    images[5] = ["fundamentals/5/1.png"];
+
+    _initImagesHelper("fundamentals", "Overview", 1, 2); //overview
+    _initImagesHelper("fundamentals", "Stability", 2, 9); //stability
+    _initImagesHelper("fundamentals", "Adaptability", 3, 4); //adaptability
+    _initImagesHelper("fundamentals", "Purification", 4, 5); //purification
+    _initImagesHelper("fundamentals", "Integration", 5, 7); //integration
+    _initImagesHelper("fundamentals", "Growth", 6, 4); //growth
+    _initImagesHelper("fundamentals", "Summary", 7, 5); //summary
+  }
+
+  _initImagesHelper(tabName, fundamentalId, folderName, numFile){
+    List<String> list = new List();
+    for (int i = 1; i <= numFile; ++i){
+      String fileName = "${tabName}/${folderName}/${i}.PNG";
+      list.add(fileName);
+    }
+    images[fundamentalId] = list;
   }
 
   _build() {
     List<Widget> result = [];
     List<String> principalImages = images[widget.fundamentalId];
+
     for (String imagePath in principalImages) {
       result.add(new TMImage(image: imagePath));
       result.add(SizedBox(height: 8));
     }
+
+    print(result);
+
     return ListView(
       shrinkWrap: true,
       physics: NeverScrollableScrollPhysics(),

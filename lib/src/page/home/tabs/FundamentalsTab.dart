@@ -26,18 +26,20 @@ class _FundamentalsTabState extends State<FundamentalsTab> {
           crossAxisSpacing: 6,
           shrinkWrap: true,
           children: <Widget>[
-            ItemIcon(text: Text('STABILITY'), iconData: Icons.check_box, onTap:() {_onTab(1);}),
-            ItemIcon(text: Text('ADAPTABILITY'), iconData: Icons.check_circle, onTap:() {_onTab(2);}),
-            ItemIcon(text: Text('PURIFICATION'), iconData: Icons.check_circle, onTap:() {_onTab(3);}),
-            ItemIcon(text: Text('INTEGRATION'), iconData: Icons.check_circle, onTap:() {_onTab(4);}),
-            ItemIcon(text: Text('GROWTH'), iconData: Icons.check_circle, onTap:() {_onTab(5);}),
+            ItemIcon(text: Text('OVERVIEW'), iconData: Icons.check_box, onTap:() {_onTab("Overview");}),
+            ItemIcon(text: Text('STABILITY'), iconData: Icons.check_circle, onTap:() {_onTab("Stability");}),
+            ItemIcon(text: Text('ADAPTABILITY'), iconData: Icons.check_circle, onTap:() {_onTab("Adaptability");}),
+            ItemIcon(text: Text('PURIFICATION'), iconData: Icons.check_circle, onTap:() {_onTab("Purification");}),
+            ItemIcon(text: Text('INTEGRATION'), iconData: Icons.check_circle, onTap:() {_onTab("Integration");}),
+            ItemIcon(text: Text('GROWTH'), iconData: Icons.check_circle, onTap:() {_onTab("Growth");}),
+            ItemIcon(text: Text('SUMMARY'), iconData: Icons.check_circle, onTap:() {_onTab("Summary");})
           ],
         ),
       ),
     );
   }
 
-  void _onTab(int principalId) async {
+  void _onTab(String principalId) async {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (BuildContext context) {

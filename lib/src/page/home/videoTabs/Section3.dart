@@ -12,8 +12,7 @@ class Section3 extends StatefulWidget {
 
 class _VideosTabState extends State<Section3> {
 
-  var video1 = 'Lecture 1';
-  var video2 = 'Lecture 2';
+  var video1 = 'TM Talks';
 
   @override
   Widget build(BuildContext context) {
@@ -34,9 +33,8 @@ class _VideosTabState extends State<Section3> {
           crossAxisSpacing: 6,
           shrinkWrap: true,
           children: <Widget>[
-            ItemIcon(text: Text(video1), iconData: Icons.book_outlined, onTap:() {_onGIPlanned(7);}),
-            ItemIcon(text: Text(video2), iconData: Icons.book_outlined, onTap: (){
-              _onGIPlanned(8);
+            ItemIcon(text: Text(video1), iconData: Icons.book_outlined, onTap: (){
+              _onGIPlanned(4);
             }),
           ],
         ),

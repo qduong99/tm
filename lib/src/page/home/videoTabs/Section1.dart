@@ -14,8 +14,6 @@ class _VideosTabState extends State<Section1> {
 
   var video1 = 'Asana 1';
   var video2 = 'Asana 2';
-  var video3 = 'Asana 3';
-  var video4 = 'Asana 4';
 
   @override
   Widget build(BuildContext context) {
@@ -37,10 +35,8 @@ class _VideosTabState extends State<Section1> {
           shrinkWrap: true,
           children: <Widget>[
             ItemIcon(text: Text(video1), iconData: Icons.spa_outlined, onTap:() {_onGIPlanned(1);}),
-            ItemIcon(text: Text(video2), iconData: Icons.spa_outlined, onTap:() {_onGIPlanned(2);}),
-            ItemIcon(text: Text(video3), iconData: Icons.spa_outlined, onTap:() {_onGIPlanned(3);}),
-            ItemIcon(text: Text(video4), iconData: Icons.spa_outlined, onTap: (){
-              _onGIPlanned(4);
+            ItemIcon(text: Text(video2), iconData: Icons.spa_outlined, onTap: (){
+              _onGIPlanned(2);
             }),
           ],
         ),

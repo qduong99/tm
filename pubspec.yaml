@@ -56,8 +56,17 @@ flutter:
     - assets/images/
     - assets/images/tm/
     - assets/images/fundamentals/
-    - assets/images/videos/
     - assets/images/logo/
+    - assets/images/video/1/
+    - assets/images/video/2/
+    - assets/images/video/3/
+    - assets/images/video/4/
+    - assets/images/video/5/
+    - assets/images/video/6/
+    - assets/images/video/7/
+    - assets/images/video/8/
+    - assets/images/video/9/
+    - assets/images/video/10/
     - assets/images/principals/
     - assets/images/principals/1/
     - assets/images/principals/2/
@@ -82,6 +91,8 @@ flutter:
     - assets/images/fundamentals/5/
     - assets/images/fundamentals/6/
     - assets/images/fundamentals/7/
+
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

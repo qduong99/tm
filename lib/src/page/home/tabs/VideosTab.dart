@@ -13,7 +13,7 @@ class VideosTab extends StatefulWidget {
 class _VideosTabState extends State<VideosTab> {
 
   var video1 = 'Asana';
-  var video2 = 'TM Videos';
+  var video2 = 'TM Talks';
 
   @override
   Widget build(BuildContext context) {
@@ -34,10 +34,9 @@ class _VideosTabState extends State<VideosTab> {
           crossAxisSpacing: 6,
           shrinkWrap: true,
           children: <Widget>[
-            ItemIcon(text: Text(video1), iconData: Icons.add_a_photo, onTap:() {_onGIPlanned(1);}),
-            ItemIcon(text: Text(video2), iconData: Icons.chat, onTap:() {_onGIPlanned(2);}),
-            ItemIcon(text: Text('TM Resources'), iconData: Icons.check_box, onTap: (){
-              _onGIPlanned(3);
+            ItemIcon(text: Text(video1), iconData: Icons.spa_outlined, onTap:() {_onGIPlanned(1);}),
+            ItemIcon(text: Text(video2), iconData: Icons.check_box, onTap: (){
+              _onGIPlanned(4);
             }),
           ],
         ),
